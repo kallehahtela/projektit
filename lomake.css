@@ -1,0 +1,22 @@
+body{
+  margin: 0 auto;
+}
+form
+{
+  width: 500px;
+  height: 800px;
+  background-color: #e6f5ff;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 50px;
+  border: 3px solid #b3e0ff;
+}
+.keskita{
+  text-align: center;
+}
+.oikealle
+{
+  text-align: right;
+}
