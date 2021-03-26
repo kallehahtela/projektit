@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <script src="lomake.js" charset="utf-8"></script>
     <link rel="stylesheet" href="lomake.css">
-    <title>Document</title>
+    <title>Projekti 1</title>
 </head>
 <body>
     <h1 id="otsikko">Kirjautumislomake</h1>
@@ -20,9 +20,11 @@
             </tr>
         </table>
         <p>Millainen koneen käyttäjä olet?</p>
-        <input type="radio" name="radio" value="pelaaja">Himopelaaja</br>
-        <input type="radio" name="radio" value="opiskelija">Käytän opiskeluun</br>
-        <input type="radio" name="radio" value="enkayta">En käytä konetta</br>
+        <p>
+        <input type="radio" name="radio" value="pelaaja"/>Himopelaaja<br />
+        <input type="radio" name="radio" value="opiskelija"/>Käytän opiskeluun<br/>
+        <input type="radio" name="radio" value="enkayta"/>En käytä konetta
+      </p>
 
         <p>Mitä mieltä olet nettisivuistani?</p>
         <input type="checkbox" name="box" value="hyva">Näyttää hyvältä!</br>
@@ -42,7 +44,7 @@
         <textarea class="oikea" name="palaute" rows="5" cols="40"></textarea>
 
         <br>
-        <input type="submit" name="submit" value="Tarkasta lomake">
+        <input type="button" value="Tarkista lomake" onclick="tarkistaLomake()">
     </div>
 </body>
 </html>
