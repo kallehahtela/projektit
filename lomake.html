@@ -7,8 +7,9 @@
     <title>Projekti 1</title>
 </head>
 <body>
+  <div class="keskelle">
+    <form class="" action="index.html" method="post" onsubmit="return tarkistaLomake(this)">
     <h1 id="otsikko">Kirjautumislomake</h1>
-    <div class="keskelle">
         <table>
             <tr>
                 <td>Anna nimesi :</td>
@@ -44,7 +45,8 @@
         <textarea class="oikea" name="palaute" rows="5" cols="40"></textarea>
 
         <br>
-        <input type="button" value="Tarkista lomake" onclick="tarkistaLomake()">
+        <input type="submit" name="submit" value="Tarkista lomake">
+      </form>
     </div>
 </body>
 </html>
