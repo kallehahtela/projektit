@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="lomake.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="lomake.css">
     <title>Document</title>
 </head>
 <body>
@@ -10,18 +12,17 @@
         <table>
             <tr>
                 <td>Anna nimesi :</td>
-                <td clas="oikea"><input type="text" name="nimi" value=""></td>
+                <td class="oikea"><input type="text" name="nimi" value=""></td>
             </tr>
-
             <tr>
                 <td>Anna salasana :</td>
-                <td clas="oikea"><input type="password" name="salasana" value=""></td>
+                <td class="oikea"><input type="password" name="salasana" value=""></td>
             </tr>
         </table>
         <p>Millainen koneen käyttäjä olet?</p>
-        <input type="checkbox" name="box" value="pelaaja">Himopelaaja</br>
-        <input type="checkbox" name="box" value="opiskelija">Käytän opiskeluun</br>
-        <input type="checkbox" name="box" value="enkayta">En käytä konetta</br>
+        <input type="radio" name="radio" value="pelaaja">Himopelaaja</br>
+        <input type="radio" name="radio" value="opiskelija">Käytän opiskeluun</br>
+        <input type="radio" name="radio" value="enkayta">En käytä konetta</br>
 
         <p>Mitä mieltä olet nettisivuistani?</p>
         <input type="checkbox" name="box" value="hyva">Näyttää hyvältä!</br>
@@ -41,7 +42,7 @@
         <textarea class="oikea" name="palaute" rows="5" cols="40"></textarea>
 
         <br>
-        <button type="submit" name="submit" value="tarkista">Tarkista</button>
+        <input type="submit" name="submit" value="Tarkasta lomake">
     </div>
 </body>
 </html>

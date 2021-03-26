@@ -1,9 +1,9 @@
-function tarkistaLomake() {
+function tarkistaLomake(form) {
   //määritellään muuttujat
   var nimi = form.nimi.value;
   var salasana = form.salasana.value;
-  var koneenKayttaja = form.kone;
-  var mielipide = form.mieli;
+  var koneenKayttaja = form.radio;
+  var mielipide = form.box;
   var lempiaine = form.aineet;
   var palaute = form.palaute.value;
   //tarkistetaan, ettei nimikenttä ole tyhjä
@@ -46,8 +46,7 @@ if (tulos == false) {
 if(lempiaine == "0") {
   alert("Valitse, mikä on lempiaineesi Keudassa!");
   return false;
-}
-}
-function laheta() {
+} else {
   alert("Kiitos lomakkeen täytöstä!");
+}
 }
