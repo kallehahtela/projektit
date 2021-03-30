@@ -10,7 +10,7 @@ window.onload= function alustapeli()
   {
     for(var j = 0; j < 3; j++)
     {
-      alustus += '<button class= "nayta" type="button" name="' + i +'" onclick="arvaa(this)" value = '+i+'>'+i+'</button>';
+      alustus += '<button class= "nayta" type="button" name="' + i +'" onclick="arvaaluku(this)" value = '+i+'>'+i+'</button>';
       if(i < 10 && j != 2)
       {
         i++;
@@ -50,7 +50,7 @@ function arvaaluku(arpa)
     {
       alert("Oikein, käytit " + kerrat + " kertaa");
     }
-    else 
+    else
     {
       alert("Käytit kaikki kertasi");
     }
