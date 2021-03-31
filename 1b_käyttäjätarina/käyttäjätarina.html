@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="käyttäjätarina.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="käyttäjätarina.css">
+    <title>Kirjautumisikkuna</title>
+  </head>
+  <body>
+    <div class="keskelle">
+
+    <h1 id="otsikko">Kirjaudu sisään</h1>
+    <p id="kuvaus">Ole hyvä ja täytä lomakkeeseen sinulta pyydetyt tiedot.</p
+      <form id="kyselylomake" action="index.html" method="post">
+        <article id="nimisyotto">
+          <label for="nimi">Syötä nimesi:</label>
+          <input type="text" id="nimi" value="">
+        </article>
+        <article id="emailsyotto">
+          <label for="email">Syötä sähköpostiosoitteesi:</label>
+          <input type="text" id="email" value="">
+        </article>
+        <article id="ikasyotto">
+          <label for="ika">Syötä ikäsi:</label>
+          <input type="number" id="ika" value="">
+        </article>
+        <label for="pudotus">Kerro lempieläimesi:</label>
+        <select id="pudotus" name="pudotus">
+          <option value="kissa">kissa</option>
+          <option value="koira">koira</option>
+          <option value="fretti">fretti</option>
+          <option value="papukaija">papukaija</option>
+        </select>
+        <p>Mikä on sukupuolesi?</p>
+        <input type="radio" name="sukupuoli" id= "mies" value="mies">
+        <label for="mies">mies</label> <br>
+        <input type="radio" name="sukupuoli" id="nainen" value="nainen">
+        <label for="nainen">nainen</label> <br>
+        <input type="radio" name="sukupuoli" id="muu" value="muu">
+        <label for="muu">muu</label> <br>
+        <p>Mitä seuraavista asioista omistat?</p>
+        <input type="checkbox" name="puhelin" id="puhelin" value="puhelin">
+        <label for="puhelin">älypuhelimen</label> <br>
+        <input type="checkbox" name="tabletti" id="tabletti" value="tabletti">
+        <label for="tabletti">tabletin</label> <br>
+        <input type="checkbox" name="tietokone" id="tietokone" value="tietokone">
+        <label for="tietokone">tietokoneen</label> <br>
+        <input type="checkbox" name="televisio" id="televisio" value="televisio">
+        <label for="televisio">television</label> <br> <br>
+        <label for="tekstikentta">Lisäkommentteja:</label> <br>
+        <textarea name="tekstikentta" id="tekstikentta" rows="4" cols="40"></textarea>
+        <br>
+        <input type="submit" name="laheta" id="laheta" value="Lähetä">
+      </form>
+      </div>
+  </body>
+</html>
