@@ -1,3 +1,4 @@
+//tekijä jenna koskelo
 //valitaan kaikki buttonit
 const napit = document.querySelectorAll('button');
 // valitaan boksi näyttö (jonne luvut ilmestyvät)
