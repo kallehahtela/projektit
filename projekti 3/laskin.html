@@ -7,43 +7,44 @@
     <title>Laskin</title>
 </head>
 <body>
-    
+
     <div class="laskin">
 
     <input type="text" class="ruutu" value="0" disabled />
-        
+
     <tr>
-        <td colspan="4"><input id="boksi" type="text"></td>
+       <td colspan="4"><input class="boksi" type="text"></td>
+   </tr>
+    <tr>
+        <td><button value="%" type="button">%</button></td>
+        <td><button value="reset" type="button">CE</button></td>
+        <td><button value="delete" type="button">C</button></td>
+        <td><button value="/" type="button">/</button></td>
     </tr>
     <tr>
-        <td><button id="pros" type="button" onclick="jotain()">%</button></td>
-        <td><button id="reset" type="button" onclick="jotain()">CE</button></td>
-        <td><button id="delete" type="button" onclick="jotain()">C</button></td>
-        <td><button id="jako" type="button" onclick="jotain()">/</button></td>
+        <td><button value="7" type="button">7</button></td>
+        <td><button value="8" type="button">8</button></td>
+        <td><button value="9" type="button">9</button></td>
+        <td><button value="*" type="button">*</button></td>
     </tr>
     <tr>
-        <td><button id="7" type="button" onclick="jotain()">7</button></td>
-        <td><button id="8" type="button" onclick="jotain()">8</button></td>
-        <td><button id="9" type="button" onclick="jotain()">9</button></td>
-        <td><button id="kerto" type="button" onclick="jotain()">*</button></td>
+        <td><button value="4" type="button">4</button></td>
+        <td><button value="5" type="button">5</button></td>
+        <td><button value="6" type="button">6</button></td>
+        <td><button value="+" type="button">+</button></td>
     </tr>
     <tr>
-        <td><button id="4" type="button" onclick="jotain()">4</button></td>
-        <td><button id="5" type="button" onclick="jotain()">5</button></td>
-        <td><button id="6" type="button" onclick="jotain()">6</button></td>
-        <td><button id="plus" type="button" onclick="jotain()">+</button></td>
+        <td><button value="1" type="button">1</button></td>
+        <td><button value="2" type="button">2</button></td>
+        <td><button value="3" type="button">3</button></td>
+        <td><button value="-" type="button">-</button></td>
     </tr>
     <tr>
-        <td><button id="1" type="button" onclick="jotain()">1</button></td>
-        <td><button id="2" type="button" onclick="jotain()">2</button></td>
-        <td><button id="3" type="button" onclick="jotain()">3</button></td>
-        <td><button id="minus" type="button" onclick="jotain()">-</button></td>
-    </tr>
-    <tr>
-        <td><button id="pilkku" type="button" onclick="jotain()">,</button></td>
-        <td><button id="0" type="button" onclick="jotain()">0</button></td>
-        <td colspan="2"><button id="yhtasuuri" type="button" onclick="jotain()">=</button></td>
+        <td><button value="," type="button">,</button></td>
+        <td><button value="0" type="button">0</button></td>
+        <td colspan="2"><button value="=" type="button">=</button></td>
     </tr>
     </table>
+    <script src="laskin.js" charset="utf-8"></script>
 </body>
 </html>
