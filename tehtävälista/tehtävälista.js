@@ -1,8 +1,9 @@
+//tehnyt Kalle Hahtela
 var enterButton = document.getElementById("painike");
-enterButton.addEventListener("click",lisaaListaanNapauttaessa); 
+enterButton.addEventListener("click",lisaaListaanNapauttaessa);
 
 var input = document.getElementById("syotto");
-input.addEventListener("keypress", lisaaListaanEnterilla); 
+input.addEventListener("keypress", lisaaListaanEnterilla);
 
 var ul = document.querySelector("ul");
 
@@ -12,13 +13,13 @@ var ul = document.querySelector("ul");
 
 function luoListaElementti()
 {
-  var li = document.createElement("li"); 
+  var li = document.createElement("li");
 
 if(input.value != '')
 {
-  li.appendChild(document.createTextNode(input.value)); 
-    ul.appendChild(li); 
-    input.value = ""; 
+  li.appendChild(document.createTextNode(input.value));
+    ul.appendChild(li);
+    input.value = "";
 }
 
 function crossOut() {
@@ -31,7 +32,7 @@ function crossOut() {
   poisto.appendChild(document.createTextNode("X"));
   li.appendChild(poisto);
   poisto.addEventListener("click", poistaTehtava);
- 
+
 function poistaTehtava()
 {
       li.classList.add("delete")
@@ -41,8 +42,8 @@ function poistaTehtava()
 
 function lisaaListaanNapauttaessa()
 {
-  if (inputLength() > 0) { 
-      luoListaElementti(); 
+  if (inputLength() > 0) {
+      luoListaElementti();
   }
 }
 
