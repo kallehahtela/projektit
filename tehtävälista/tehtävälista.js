@@ -6,7 +6,7 @@ var input = document.getElementById("syotto");
 input.addEventListener("keypress", lisaaListaanEnterilla);
 
 var ul = document.querySelector("ul");
-
+function inputLength()
 {
   return input.value.length;
 }
