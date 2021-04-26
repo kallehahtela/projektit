@@ -74,3 +74,6 @@ input {
 	border: none;
 	width: 400px;
 }
+.delete {
+	display: none;
+}
