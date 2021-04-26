@@ -33,3 +33,6 @@ button {
   border: 1px solid black;
   font-size: 2rem;
 }
+.delete {
+	display: none;
+}
