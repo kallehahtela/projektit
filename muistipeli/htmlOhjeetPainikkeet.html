@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+        <link rel="stylesheet" href="muistipeli.css">
+        <script src="muistipeli.js" charset="utf-8"></script>
     <title>Muistipeli</title>
   </head>
   <body>
@@ -15,7 +17,19 @@
 
       <!-- dropdown valikko tässä välissä -->
 
-      <button id="aloitaPeli" name="button">Aloita peli!</button>
+            <div class="dropdown">
+              <div class="tasot">
+                <button>Valitse tästä pelin koko</button>
+                <ul>
+                  <li><a href="#">4x4</a></li>
+                  <li><a href="#">4x6</a></li>
+                  <li><a href="#">6x6</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+      <button class="aloitaPeli" name="button">Aloita peli!</button>
     </div>
   </body>
 </html>
