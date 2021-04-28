@@ -1,0 +1,88 @@
+body {
+	background: #f5f5cc;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+.otsikko {
+  margin-top: 100px;
+	font-size: 40px;
+}
+.ohje {
+  margin-top: 70px;
+  font-size: 20px;
+
+}
+.dropdown {
+  height: 10vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tasot {
+  position: relative;
+}
+
+.tasot ul {
+  margin-top: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  background: white;
+  left: 0px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+.tasot li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasot li:hover {
+  background-color: #abc773;
+}
+
+.tasot a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown button {
+  background-color: #cccc99;
+  border-radius: 12px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.tasot button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
+}
+.aloitaPeli {
+  background-color: #abc773;
+  border-radius: 12px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
