@@ -6,7 +6,7 @@ let ekaKortti, tokaKortti;
 
 //Kortin kääntäminen
 function kaannaKortti() {
-  //jos peli on "lukittu", fuktio ei käynnisty
+  //jos peli on "lukittu"eli yksi pari on jo valittu, fuktio ei käynnisty
   if (lukitsePeli) return;
   //estetään saman kortin valinta kahdesti
   if (this === ekaKortti) return;
@@ -41,7 +41,7 @@ function disable() {
 }
 
 function unflip() {
-  //estää muiden korttie valitsemisen kun funktio on vielä kesken
+  //estää muiden korttien valitsemisen kun funktio on vielä kesken
   lukitsePeli = true;
   //kortti pysyy näkyvillä hetken, ennenkuin kääntyy taas
   setTimeout(() => {
