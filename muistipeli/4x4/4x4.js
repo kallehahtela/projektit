@@ -66,5 +66,10 @@ function reset() {
   });
 })();
 
+//aloita uusi peli
+function newGame() {
+  location.reload();
+  return false;
+}
 //lisätään kortteihin eventlistener jotta ne kääntyvät klikatessa
 kortit.forEach(kortti => kortti.addEventListener('click',kaannaKortti));

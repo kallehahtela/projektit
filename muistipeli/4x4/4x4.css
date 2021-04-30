@@ -47,3 +47,35 @@ backface-visibility: hidden;
 .etupuoli {
   transform: rotateY(180deg);
 }
+
+.nav-links {
+  position: fixed;
+  right: 20%;
+  top: 20%;
+  width: 8em;
+  margin-top: -2.5em;
+}
+ul {
+  list-style-type: none;
+}
+#home {
+  background: #e0d9ad;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  color: #0e3e00;
+  font-size: 28px;
+  border: none;
+  border-radius: 5px;
+}
+#replay {
+  background: #e0d9ad;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  margin-top: 15px;
+  color: #0e3e00;
+  font-size: 28px;
+  border: none;
+  border-radius: 5px;
+}
