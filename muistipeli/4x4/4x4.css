@@ -1,8 +1,12 @@
 .hiiri {
-  background-color: #cccc99;
-  border-radius: 12px;
-  padding: 20px;
-
+  background: #e0d9ad;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  color: #0e3e00;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
 } 
 * {
   padding: 0;
