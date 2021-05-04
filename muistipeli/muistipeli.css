@@ -1,7 +1,7 @@
 body {
 	background: #f5f5cc;
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Times New Roman';
 }
 .eka {
 	font-size: 20px;
@@ -90,6 +90,7 @@ body {
   transform: translateY(0px);
 }
 .aloitaPeli {
+	margin-top: 40px;
   background-color: #abc773;
   border-radius: 12px;
   color: white;
@@ -98,6 +99,5 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin: 4px 2px;
   cursor: pointer;
 }
