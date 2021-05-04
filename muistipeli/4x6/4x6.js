@@ -26,10 +26,10 @@ function kaannaKortti() {
 
     tarkistaPari();
 }
-//tarkistetaan pari
+//tarkistetaan pari datasetin avulla
 function tarkistaPari() {
   let ovatPari = ekaKortti.dataset.kehys === tokaKortti.dataset.kehys;
-  //jos kortit ovat pari estetään niitä kääntymästä
+  //jos kortit ovat pari estetään niitä kääntymästä ja
   //jos kortit eivät ole pari käännetään ne takaisin
   ovatPari ? disable() : unflip();
 }
