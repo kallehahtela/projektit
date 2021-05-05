@@ -1,0 +1,97 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+ height: 100vh;
+ display: flex;
+ background: #f9f3d1;
+}
+/* -- ohjetekstin muotoilu -- */
+.ohje {
+  color: #0e3e00;
+  position: fixed;
+  top: 5px;
+  left: 40%;
+  font-size: 22px;
+  font-family: monospace;
+}
+/* --muistipeli alueen muotoilu -- */
+.muistipeli {
+ width: 650px;
+ margin: auto;
+ margin-top: 40px;
+ margin-bottom: 5px;
+ display: flex;
+ flex-wrap: wrap;
+ perspective: 1000px;
+}
+/* ------------------------ */
+/* -- pelikorttien muotoilu -- */
+.pelikortti {
+width: calc(16.666% - 10px); /* 6 korttia vaakaan */
+height: calc(16.666% - 10px); /* kuusi korttia pystyyn */
+margin: 5px;
+position: relative;
+transform: scale(1);
+transform-style: preserve-3d;
+transition: transform.5s;
+}
+.pelikortti:active {
+ transform: scale(.97);
+ transition: transform.2s;
+}
+.pelikortti.flip {
+ transform: rotateY(180deg);
+}
+/* ---------------------- */
+/* määritetää korttien kuvat päällekkäin */
+.etupuoli,
+.takapuoli {
+width: 100%;
+height: 100%;
+padding: 12px;
+position: absolute;
+border-radius: 5px;
+background: #e0d9ad;
+backface-visibility: hidden;
+}
+.etupuoli {
+ transform: rotateY(180deg);
+}
+/* ------------- */
+
+/* -- linkkien muotoilu -- */
+.nav-links {
+position: fixed;
+ right: 10%;
+ top: 20%;
+ width: 8em;
+}
+ul {
+ list-style-type: none;
+}
+#home {
+ background: #e0d9ad;
+ text-align: center;
+ padding: 10px;
+ margin: auto;
+ margin-top: 15px;
+ color: #0e3e00;
+ font-size: 28px;
+ border: none;
+ border-radius: 5px;
+}
+#replay {
+ background: #e0d9ad;
+ text-align: center;
+ padding: 10px;
+ margin: auto;
+ margin-top: 15px;
+ color: #0e3e00;
+ font-size: 28px;
+ border: none;
+ border-radius: 5px;
+}
+/* ------------------- */
