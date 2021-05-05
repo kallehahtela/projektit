@@ -8,8 +8,9 @@
     <title>muistipeli 4x4</title>
   </head>
   <body>
-    <section class="muistipeli">
+    <p class="ohje">Löydätkö kaikki parit?</p>
 
+    <section class="muistipeli">
       <div class="pelikortti" data-kehys= "ankka">
         <img class="etupuoli" src="img/ankka.png" alt="ankka">
         <img class="takapuoli" src="img/taustapuoli.png" alt="tausta">
@@ -88,9 +89,10 @@
       <li><button id="home" onclick="location.href='../htmlOhjeetPainikkeet.html';"><i class="fa fa-home"></i></button></li>
       <li><button id="replay" onclick="newGame()"><i class="fa fa-refresh"></i></button></li>
       </ul>
-      <div class="hiiri" >
-      <p>Hiiren napautukset: <a id="clicks" >0</a></p>
-      </div>
+    </div>
+
+    <div class="hiiri" >
+    <p>Hiiren napautukset: <a id="clicks" >0</a></p>
     </div>
 
     <script src="4x4.js" charset="utf-8"></script>
