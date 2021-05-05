@@ -2,6 +2,7 @@ body {
 	background: #f5f5cc;
 	text-align: center;
 	font-family: 'Times New Roman';
+	color: #0e3e00;
 }
 .eka {
 	font-size: 20px;
@@ -15,15 +16,42 @@ body {
   font-size: 20px;
 	border: 1px solid black;
 }
-.rivi {
-	margin-bottom: 30px;
+/* ---Kirjautumisalueen css--- */
+.kirjaudu {
+margin-bottom: 20px;
+padding: 10px;
 }
+input {
+	margin: 3px 0;
+	padding: 5px;
+	box-sizing: border-box;
+}
+input:focus {
+	outline: none;
+  border: 3px solid #abc773;
+}
+#kirjaudu-button {
+	background-color: #cccc99;
+  border-radius: 12px;
+  color: white;
+  padding: 10px;
+	margin: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+#kirjaudu-button:hover {
+	background: #b0b082;
+}
+/* 	------ 	*/
+
 .otsikko {
-  margin-top: 100px;
+  margin-top: 70px;
 	font-size: 40px;
 }
 .ohje {
-  margin-top: 70px;
+  margin-top: 50px;
   font-size: 20px;
 
 }
@@ -83,7 +111,9 @@ body {
   margin: 4px 2px;
   cursor: pointer;
 }
-
+.dropdown button:hover {
+	background: #b0b082;
+}
 .tasot button:focus + ul {
   opacity: 1;
   pointer-events: all;
@@ -100,4 +130,7 @@ body {
   display: inline-block;
   font-size: 20px;
   cursor: pointer;
+}
+.aloitaPeli:hover {
+	background: #9bb567;
 }

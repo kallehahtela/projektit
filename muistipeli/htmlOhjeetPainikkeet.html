@@ -13,15 +13,17 @@
       <h3>Pelissä tehtävänäsi on etsiä kaikki samanlaiset korttiparit
       mahdollisimman nopeasti.</h3>
       </div>
-      <h1 id="otsikko">Kirjaudu ensin sisään</h1>
-                  <div class="rivi">
-                      <span class="eka">Anna nimesi:</span>
-                      <span class="toka"><input type="text" name="nimi" value=""></span>
-                  </div>
-                  <div class="rivi">
-                      <span class="eka">Anna salasana:</span>
-                      <span class="toka"><input type="password" name="salasana" value=""></span>
-                  </div>
+
+      <div class="kirjaudu">
+        <h2 id="kirjaudu-otsikko">Kirjaudu ensin sisään:</h2>
+        <form class="kirjautumis-form" method="post">
+          <label for="tunnus">Käyttäjätunnus:</label>
+          <input type="text" id="tunnus" placeholder="Syötä käyttäjätunnus"><br>
+          <label for="salasana">Salasana:</label>
+          <input type="password" id="salasana" placeholder="Syötä salasanasi"><br>
+          <input type="submit" id="kirjaudu-button" value="Kirjaudu">
+        </form>
+      </div>
 
             <div class="dropdown">
               <div class="tasot">
