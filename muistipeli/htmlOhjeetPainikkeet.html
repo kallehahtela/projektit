@@ -16,11 +16,12 @@
 
       <div class="kirjaudu">
         <h2 id="kirjaudu-otsikko">Kirjaudu ensin sisään:</h2>
-        <form class="kirjautumis-form" method="post">
+        <div id="message"></div>
+        <form class="kirjautumis-form" method="post" onsubmit="return tarkistaKirjautuminen(this)">
           <label for="tunnus">Käyttäjätunnus:</label>
-          <input type="text" id="tunnus" placeholder="Syötä käyttäjätunnus"><br>
+          <input type="text" name="tunnus" placeholder="Syötä käyttäjätunnus"><br>
           <label for="salasana">Salasana:</label>
-          <input type="password" id="salasana" placeholder="Syötä salasanasi"><br>
+          <input type="password" name="salasana" placeholder="Syötä salasanasi"><br>
           <input type="submit" id="kirjaudu-button" value="Kirjaudu">
         </form>
       </div>
@@ -39,6 +40,7 @@
 
 
       <button class="aloitaPeli" name="button">Aloita peli!</button>
+      <script src="kirjautumisikkuna.js" charset="utf-8"></script>
     </div>
   </body>
 </html>
