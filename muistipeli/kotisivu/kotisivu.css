@@ -1,0 +1,58 @@
+
+body {
+    background-color: beige;      
+}
+
+
+h1 {
+    color: #0e3e00;
+    font-size: 35px;
+    position: absolute;
+    left: 700px;
+    top: 100px;
+}
+
+p {
+    color: #0e3e00;
+    font-size: 20px;
+    position: absolute;
+    left: 700px;
+    top: 250px;
+}
+
+h3 {
+    color: #0e3e00;
+    font-size: 20px;
+    position: absolute;
+    left: 850px;
+    top: 340px;
+  
+}
+
+select {
+    color: #0e3e00;
+    font-size: 20px;
+    position: absolute;
+    left: 890px;
+    top: 400px;
+  
+}
+
+
+button {
+    font-size: 20px;
+    color: black;
+    background-color: #97D8C4;
+    position: absolute;
+    left: 880px;
+    top: 500px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+   
+}
+
+button:hover {
+    transition: 1s;
+    background-color: white;
+}
