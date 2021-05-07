@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="4x4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/redo-alt?style=solid">
+    <title>muistipeli 4x4</title>
+  </head>
+  <body>
+    <p class="ohje">Löydätkö kaikki parit?</p>
+
+    <section class="muistipeli">
+      <div class="pelikortti" data-kehys= "ankka">
+        <img class="etupuoli" src="img/ankka.png" alt="ankka">
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta">
+      </div>
+      <div class="pelikortti" data-kehys= "ankka">
+        <img class="etupuoli" src="img/ankka.png" alt="ankka">
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta">
+      </div>
+
+      <div class="pelikortti" data-kehys= "kalaveneessä">
+        <img class="etupuoli" src="img/kalaveneessä.png" alt="kala veneessä" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+      <div class="pelikortti" data-kehys= "kalaveneessä">
+        <img class="etupuoli" src="img/kalaveneessä.png" alt="kala veneessä" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+
+      <div class="pelikortti" data-kehys= "kissa">
+        <img class="etupuoli" src="img/kissa.png" alt="kissa" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+      <div class="pelikortti" data-kehys= "kissa">
+        <img class="etupuoli" src="img/kissa.png" alt="kissa" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+
+      <div class="pelikortti" data-kehys= "koira">
+        <img class="etupuoli" src="img/koira.png" alt="koira" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+      <div class="pelikortti" data-kehys= "koira">
+        <img class="etupuoli" src="img/koira.png" alt="koira" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+
+      <div class="pelikortti" data-kehys= "lehmä">
+        <img class="etupuoli" src="img/lehmä.png" alt="lehmä" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+      <div class="pelikortti" data-kehys= "lehmä">
+        <img class="etupuoli" src="img/lehmä.png" alt="lehmä" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+
+      <div class="pelikortti" data-kehys= "maapallo">
+        <img class="etupuoli" src="img/maapallo.png" alt="maapallo" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+      <div class="pelikortti" data-kehys= "maapallo">
+        <img class="etupuoli" src="img/maapallo.png" alt="maapallo" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+
+      <div class="pelikortti" data-kehys= "talo">
+        <img class="etupuoli" src="img/talo.png" alt="talo" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+      <div class="pelikortti" data-kehys= "talo">
+        <img class="etupuoli" src="img/talo.png" alt="talo" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+
+      <div class="pelikortti" data-kehys= "vene">
+        <img class="etupuoli" src="img/vene.png" alt="vene" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+      <div class="pelikortti" data-kehys= "vene">
+        <img class="etupuoli" src="img/vene.png" alt="vene" />
+        <img class="takapuoli" src="img/taustapuoli.png" alt="tausta" />
+      </div>
+    </section>
+
+    <div id="stopwatch">
+      00:00:00
+  </div>
+
+  <ul id="buttons">
+      <li><button class="btn" onclick="startTimer()">Aloita</button></li>
+      <li><button class="btn" onclick="stopTimer()">Pysäytä</button></li>
+
+      <li><button class="btn" onclick="resetTimer()">Nollaa</button></li>
+  </ul>
+
+    <div class="nav-links">
+      <ul>
+      <li><button id="home" onclick="location.href='kotisivu.html';"><i class="fa fa-home"></i></button></li>
+      <li><button id="replay" onclick="newGame()"><i class="fa fa-refresh"></i></button></li>
+      </ul>
+    </div>
+
+    <div class="hiiri" >
+    <p>Hiiren napautukset: <a id="clicks" >0</a></p>
+    </div>
+
+    <script src="4x4.js" charset="utf-8"></script>
+  </body>
+</html>

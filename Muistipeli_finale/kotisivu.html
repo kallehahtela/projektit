@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="kotisivu.css">
+    
+    <title>Kotisivu</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Ohjeet.html">Ohjeet</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <h1>Tervetuloa pelaamaan muistipeliä</h1>
+    <p>Valitse dropdown valikosta sopiva peli koko ja paina alota peli</p>
+
+    
+        <h3>Valitse pelin koko</h3>
+
+        <select id="pelit">
+            <option disabled hidden selected>Valitse</option>
+            <option id="eka" name="helppo"value="helppo">4x4</option>
+            <option id="toka" name="keskivaikea" value="keskivaikea">4x6</option>
+            <option id="kolmas" name="vaikea" value="vaikea">6x6</option>
+        </select>
+    
+
+        <button id="pelaamaan" type="submit" name="button" onclick="lataaOikeaSivu()">Pelaamaan</button>
+        <script src="4x4.js">
+            
+        </script>
+</body>
+</html>
