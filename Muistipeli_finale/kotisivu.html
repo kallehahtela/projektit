@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="kotisivu.css">
-    
-    <title>Kotisivu</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-        <nav>
-            <ul>
-                <li><a href="Ohjeet.html">Ohjeet</a></li>
-            </ul>
-        </nav>
-        </div>
-    </header>
-    <h1>Tervetuloa pelaamaan muistipeliä</h1>
-    <p>Valitse dropdown valikosta sopiva peli koko ja paina alota peli</p>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="muistipeli.css">
+        <script src="muistipeli.js" charset="utf-8"></script>
+    <title>Muistipeli</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1 class="otsikko">Tervetuloa pelaamaan muistipeliä!</h1>
+    <div class="ohje">
+      <h3>Pelissä tehtävänäsi on etsiä kaikki samanlaiset korttiparit
+      mahdollisimman nopeasti.</h3>
+      </div>
 
-    
-        <h3>Valitse pelin koko</h3>
+      <div class="kirjaudu">
+        <h2 id="kirjaudu-otsikko">Kirjaudu ensin sisään:</h2>
+        <div id="message"></div>
+        <form class="kirjautumis-form" method="post" onsubmit="return tarkistaKirjautuminen(this)">
+          <label for="tunnus">Käyttäjätunnus:</label>
+          <input type="text" name="tunnus" placeholder="Syötä käyttäjätunnus"><br>
+          <label for="salasana">Salasana:</label>
+          <input type="password" name="salasana" placeholder="Syötä salasanasi"><br>
+          <input type="submit" id="kirjaudu-button" value="Kirjaudu">
+        </form>
+      </div>
 
-        <select id="pelit">
-            <option disabled hidden selected>Valitse</option>
-            <option id="eka" name="helppo"value="helppo">4x4</option>
-            <option id="toka" name="keskivaikea" value="keskivaikea">4x6</option>
-            <option id="kolmas" name="vaikea" value="vaikea">6x6</option>
-        </select>
-    
+            <div class="dropdown">
+              <div class="tasot">
+                      <h3>Valitse alta muistipelin koko ja aloita peli!</h3>
+                <button>Valitse tästä pelin koko</button>
+                <ul>
+                  <li><a href="#">4x4</a></li>
+                  <li><a href="#">4x6</a></li>
+                  <li><a href="#">6x6</a></li>
+                </ul>
+              </div>
+            </div>
 
-        <button id="pelaamaan" type="submit" name="button" onclick="lataaOikeaSivu()">Pelaamaan</button>
-        <script src="4x4.js">
-            
-        </script>
-</body>
+
+      <button class="aloitaPeli" name="button">Aloita peli!</button>
+      <script src="kirjautumisikkuna.js" charset="utf-8"></script>
+    </div>
+  </body>
 </html>
