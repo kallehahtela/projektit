@@ -4,29 +4,7 @@ body {
 	font-family: 'Times New Roman';
 	color: #0e3e00;
 }
-.eka {
-	font-size: 20px;
-}
 
-.toka {
-	background-color: #abc773;
-  border-radius: 12px;
-	padding: 10px;
-	padding-bottom: 15px;
-  font-size: 20px;
-	border: 1px solid black;
-margin-top: 15px;
-}
-
-.kolmas {
-	background-color: #cccc99;
-	border-radius: 12px;
-	padding: 10px;
-	padding-bottom: 15px;
-	font-size: 20px;
-	border: 1px solid black;
-margin-top: 15px;
-}
 /* ---Kirjautumisalueen css--- */
 .kirjaudu {
 margin-bottom: 20px;
