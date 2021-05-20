@@ -1,155 +1,74 @@
-
 body {
-    background-color: beige;
-    margin: 0; 
+  background: #f5f5cc;
+  text-align: center;
+  font-family: 'Times New Roman';
+  color: #0e3e00;
 }
-
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
 }
-
-
-header {
-
-background-color: burlywood;
+.otsikko {
+  margin-top: 70px;
+	font-size: 40px;
 }
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
+.ohje {
+  margin-top: 50px;
+  font-size: 20px;
 }
+/* ----- */
 
-nav {
-    float: right;
+/* ---Kirjautumisalueen css--- */
+.kirjaudu {
+margin-bottom: 20px;
+padding: 10px;
 }
-
-nav ul {
-    margin: 0;
-    padding: 10px 0;
-    list-style: none;
+input {
+	margin: 3px 0;
+	padding: 5px;
+	box-sizing: border-box;
 }
-
-nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 25px;
-
-    position: relative;
+input:focus {
+	outline: none;
+  border: 3px solid #abc773;
 }
-
-nav a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
+#kirjaudu-button {
+	background-color: #abc773;
+  border-radius: 12px;
+  color: white;
+  padding: 10px;
+	margin: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
 }
-
-nav a:hover {
-    color: white;
+#kirjaudu-button:hover {
+	background: #9bb567;
 }
+/* 	------ 	*/
 
-nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: black;
-
-
-    position: absolute;
-    top: 0;
-    width: 0%;
-
-    transition: all ease-in-out 500ms;
+/* --- dropdown valikon css --- */
+.dropdown-valinta {
+  padding: 5px 8px;
+  margin-bottom: 20px;
 }
+/* ----- */
 
-nav a:hover::before {
-    width: 100%;
+/* -- pelaa buttonin css -- */
+#abc:link, #abc:visited {
+	margin-top: 5px;
+  background-color: #abc773;
+  border-radius: 12px;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
 }
-
-
-h1 {
-    color: #0e3e00;
-    font-size: 35px;
-    position: absolute;
-    left: 700px;
-    top: 100px;
+#abc:hover, #abc:active {
+	background: #9bb567;
 }
-
-p {
-    color: #0e3e00;
-    font-size: 20px;
-    position: absolute;
-    left: 700px;
-    top: 250px;
-}
-
-h3 {
-    color: #0e3e00;
-    font-size: 20px;
-    position: absolute;
-    left: 850px;
-    top: 340px;
-  
-}
-
-select {
-    color: #0e3e00;
-    font-size: 20px;
-    position: absolute;
-    left: 890px;
-    top: 400px;
-  
-}
-
-
-button {
-    font-size: 20px;
-    color: black;
-    background-color: #97D8C4;
-    position: absolute;
-    left: 880px;
-    top: 500px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    padding: 20px 20px 20px 20px;
-   
-}
-
-button:hover {
-    transition: 1s;
-    background-color: white;
-}
-
-#h1 {
-    color: #0e3e00;
-    font-size: 35px;
-    position: absolute;
-    left: 400px;
-    top: 200px;
-}
-
-#ekaosa {
-    color: #0e3e00;
-    font-size: 20px;
-    position: absolute;
-    left: 450px;
-    top: 315px;
-}
-
-#tokaosa {
-    color: #0e3e00;
-    font-size: 20px;
-    position: absolute;
-    left: 450px;
-    top: 370px;
-}
-
-#kolmasosa {
-    color: #0e3e00;
-    font-size: 20px;
-    position: absolute;
-    left: 450px;
-    top: 430px;
-}
+/* ---- */
