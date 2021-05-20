@@ -27,20 +27,26 @@
       </div>
 
             <div class="dropdown">
-              <div class="tasot">
-                      <h3>Valitse alta muistipelin koko ja aloita peli!</h3>
-                <button>Valitse tästä pelin koko</button>
-                <ul>
-                  <li><a href="#">4x4</a></li>
-                  <li><a href="#">4x6</a></li>
-                  <li><a href="#">6x6</a></li>
-                </ul>
-              </div>
+              <h3>Valitse alta muistipelin koko ja aloita peli!</h3>
+              <div class="dropdown-valinta">
+              <select id="koko" name="pelin-koko">
+                <option value="4x4">4x4</option>
+                <option value="4x6">4x6</option>
+                <option value="6x6">6x6</option>
+              </select>
+                </div>
+                <div class="pelaa-button">
+                  <a id="abc" href="4x4.html">Aloita peli!</a>
+                </div>
             </div>
+            <script type="text/javascript">
+              var valinta = document.getElementById('koko');
+              valinta.onchange = function () {
+                document.getElementById('abc').href = this.value + ".html";
+              }
+            </script>
 
-
-      <button class="aloitaPeli" name="button">Aloita peli!</button>
-      <script src="kirjautumisikkuna.js" charset="utf-8"></script>
+      <script src="kotisivu.js" charset="utf-8"></script>
     </div>
   </body>
 </html>

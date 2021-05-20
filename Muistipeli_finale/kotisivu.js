@@ -1,23 +1,28 @@
-document.getElementById('pelaamaan').addEventListener('click');
+function tarkistaKirjautuminen(form) {
 
-function lataaOikeaSivu()
-{
+const tunnus = form.tunnus.value;
+const salasana = form.salasana.value;
+const kirjauduButton = document.getElementById('kirjaudu-button');
+var viesti = document.getElementById('message');
 
-    alert(document.getElementById('pelit').value);
-
-    switch (juttu)
-    {
-        case 0:
-            window.open = "4x4.html";
-            break;
-        case 1:
-            window.open = "4x6.html";
-            break;
-        case 2:
-            window.open = "6x6.html";
-            break;
-        
-    }
-    
+  if (tunnus == '' && salasana == '') {
+    viesti.innerHTML = 'Syötä käyttäjätunnus ja salasana!';
+    viesti.style.color = 'red';
+    return false;
+  }
+  if (tunnus == ''){
+    viesti.innerHTML = 'Syötä käyttäjätunnus!';
+    viesti.style.color = 'red';
+    return false;
+  }
+  if (salasana == ''){
+    viesti.innerHTML = 'Syötä salasana!';
+    viesti.style.color = 'red';
+    return false;
+  }
+  else {
+    viesti.innerHTML = 'Olet kirjautunut sisään onnistuneesti!'
+    viesti.style.color = 'green';
+    return false;
+  }
 }
-lataaOikeaSivu()
